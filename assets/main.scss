@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+@layer components {
+    .text-primary{
+      @apply text-transparent bg-gradient-to-r bg-clip-text from-rose-500 to-fuchsia-500
+    }
+    .bg-primary{
+      @apply bg-gradient-to-r from-rose-500 to-fuchsia-500
+    }
+
+    body{
+      @apply  dark:bg-darkness-100 font-jost
+    }
+
+    .dark-card{
+      @apply dark:bg-darkness-200 dark:border-rose-500 dark:text-white bg-white
+    }
+
+    .iterator:last-child {
+      @apply mb-24
+    }
+
+    ::-webkit-scrollbar {
+      @apply w-1 h-1
+     
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      @apply bg-white
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      @apply bg-primary
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      @apply bg-primary
+    }
+
+   
+    /* ... */
+  }
+
+  @media (prefers-color-scheme:dark){
+      .codes .replace-content{
+          background-color: #212529;
+      }
+  }
+
